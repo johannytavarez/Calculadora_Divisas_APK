@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/Txt1"
+        android:layout_width="183dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt2" />
+
+    <TextView
+        android:id="@+id/Txt2"
+        android:layout_width="239dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bottomInsert"
+        android:layout_width="126dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="8dp"
+        android:text="Insertar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Txt1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="381dp"
+        android:layout_height="437dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textNumber">
+
+        <TableRow
+            android:layout_width="403dp"
+            android:layout_height="81dp">
+
+            <Button
+                android:id="@+id/bottom7"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="siete"
+                android:padding="5dp"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/bottom8"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="ocho"
+                android:padding="5dp"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/bottom9"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="nueve"
+                android:padding="5dp"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/bottompeso"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="peso"
+                android:padding="10dp"
+                android:text="USD-DOP" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bottom4"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="cuatro"
+                android:padding="10dp"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/bottom5"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="cinco"
+                android:padding="10dp"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/bottom6"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="seis"
+                android:padding="10dp"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/bottomdolar"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="dolar"
+                android:padding="10dp"
+                android:text="DOP-USD" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bottom1"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="uno"
+                android:padding="10dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/bottom2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="dos"
+                android:padding="10dp"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/bottom3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="tres"
+                android:padding="10dp"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/bottomesterlinas"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="esterlina"
+                android:padding="10dp"
+                android:text="DOP-GBP" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bottom0"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_span="2"
+                android:enabled="false"
+                android:onClick="cero"
+                android:padding="10dp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/bottomCE"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="limpiar"
+                android:padding="10dp"
+                android:text="CE" />
+
+            <Button
+                android:id="@+id/bottomeuro"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:enabled="false"
+                android:onClick="euro"
+                android:padding="10dp"
+                android:text="DOP-EUR" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textNumber"
+        android:layout_width="317dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/whiteblue"
+        android:ems="10"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomInsert" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
